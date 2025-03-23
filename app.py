@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-
 import numpy as np
 from PIL import Image
 from pathlib import Path
@@ -8,19 +7,6 @@ import streamlit.components.v1 as components
 import json
 import os
 import joblib
-
-# @st.cache_data
-# def read_test_csv():
-#     project_path = os.getcwd()
-#     data_path = os.path.join(project_path, "artifacts")
-#     return pd.read_csv(os.path.join(data_path, "X_test.csv"))
-
-
-# @st.cache_data
-# def read_station_csv():
-#     project_path = os.getcwd()
-#     data_path = os.path.join(project_path, "artifacts")
-#     return pd.read_csv(os.path.join(data_path, "hubway_stations.csv"))
 
 
 @st.cache_data
@@ -71,8 +57,9 @@ def web_app(st):
     )
 
     if page == "Overview":
-        st.header("Data Overview")
-        st.write("Upload or view the bike sharing dataset")
+        # st.header("Project Overview")
+        overview_img = Image.open("artifacts/overview.png")
+        st.image(overview_img, caption="Project Overview")
 
     elif page == "Data Exploration":
         st.header("Data Exploration")

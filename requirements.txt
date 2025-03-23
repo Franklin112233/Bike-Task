@@ -5,8 +5,8 @@ scikit-learn
 seaborn
 xgboost
 scikit-optimize
-ydata-profiling
-evidently
-
+# ydata-profiling
+# evidently
+streamlit
 
 
