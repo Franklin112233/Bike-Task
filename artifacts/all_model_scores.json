@@ -1,0 +1,28 @@
+{
+  "Linear Regression": {
+    "best_cv_score": 0.541,
+    "best_parameters": {
+      "regressor__fit_intercept": true
+    },
+    "test_r2": 0.474,
+    "test_rmse": 0.441
+  },
+  "Random Forest": {
+    "best_cv_score": 0.643,
+    "best_parameters": {
+      "regressor__max_depth": 5,
+      "regressor__n_estimators": 300
+    },
+    "test_r2": 0.659,
+    "test_rmse": 0.355
+  },
+  "XGBoost": {
+    "best_cv_score": 0.626,
+    "best_parameters": {
+      "regressor__max_depth": 3,
+      "regressor__n_estimators": 101
+    },
+    "test_r2": 0.620,
+    "test_rmse": 0.375
+  }
+}
