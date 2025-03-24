@@ -22,9 +22,17 @@ This project analyzes bike trip data and builds a model to predict trip duration
 - Profile reports for data analysis
 
 
-## Getting Started
+## Local Run
 
 - ```pip install -r requirements.txt```
 - ```streamlit run app.py```
+
+
+## Run with Docker
+
+- ```docker build -t bikehub-app .```
+- ```docker run -p 8501:8501 bikehub-app```
+
+
 
 
